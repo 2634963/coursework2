@@ -73,7 +73,9 @@
       </div>
       
       <!-- Programming languages I know (to a reasonable extent) -->
-      <div class="col-12">
+      <div class="col-12 p-5">
+	<h3>Programming Languages I Know (to a reasonable extent):
+	
 	<div class="row p-3">
 	  
 	  <!-- Column 1 - C -->
@@ -82,6 +84,16 @@
 	      <img class="card-img-top" src="https://logodix.com/logo/397992.png" alt="Logo of the C Programming Language">
 	      <div class="card-body">
 		<h5 class="card-title">C</h5>
+		<h6 class="card-text">Hello World Example:</h6>
+		<pre class="pre-scrollable text-start"><code>
+#include &lt;stdio.h&gt;
+
+int main(int argc, char **argv)
+{
+  printf("Hello, World!\n");
+  return 0;
+}
+		</code></pre>
 	      </div>
 	    </div>
 	  </div>
@@ -92,6 +104,74 @@
 	      <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/IBM_PPC604e_200.jpg/500px-IBM_PPC604e_200.jpg" alt="Image of a PowerPC CPU">
 	      <div class="card-body">
 		<h5 class="card-title">PowerPC Assembly</h5>
+		<h6 class="card-text">Hello World Example:</h6>
+		<pre class="pre-scrollable text-start"><code>
+# Hello World for Xbox 360 PPC ASM.
+# Addresses are kernel-dependent, and the code to get them is long,
+# so I have chosen to omit it and insert placeholders.
+
+.global _start
+.text
+
+_start:
+  # Align the stack onto a 16-byte boundary
+  lis r3, 0xFFFF
+  ori r3, r3, 0xFFF0
+  and r1, r1, r3
+
+  # Load the address of DbgPrint into CTR 
+  lis r3, &lt;high half of DbgPrint address&gt;
+  ori r3, r3, &lt;low half of DbgPrint address&gt;
+  mtctr r3
+  
+  # Load the address of the hello world string into r3 (arg 1)
+  lis r3, hello_world@ha
+  ori r3, r3, hello_world@l
+  
+  # Clear the other arg registers
+  li r4, 0
+  li r5, 0
+  li r6, 0
+  li r7, 0
+  li r8, 0
+  li r9, 0
+  li r10, 0
+  
+  # Create a new stack frame for the function call
+  subi r1, r1, 0x60
+  
+  # Execute DbgPrint (branch to CTR)
+  bctrl
+  
+  # Pop the stack frame we created
+  addi r1, r1, 0x60
+
+  # Load the address of XamLoaderLaunchTitle into CTR
+  lis r3, &lt;high half of XamLoaderLaunchTitle address&gt;
+  ori r3, r3, &lt;low half of XamLoaderLaunchTitle address&gt;
+  mtctr r3
+  
+  # Clear all arg registers
+  li r3, 0
+  li r4, 0
+  li r5, 0
+  li r6, 0
+  li r7, 0
+  li r8, 0
+  li r9, 0
+  li r10, 0
+  
+  # Create a new stack frame
+  subi r1, r1, 0x60
+  
+  # Execute XamLoaderLaunchTitle (return to dashboard)
+  bctr
+  
+.data
+
+hello_world:
+  .asciz "Hello, World!\n"
+		</code></pre>
 	      </div>
 	    </div>
 	  </div>
@@ -102,6 +182,16 @@
 	      <img class="card-img-top" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/java_original_wordmark_logo_icon_146459.png" alt="Logo of the Java Programming Language">
 	      <div class="card-body">
 		<h5 class="card-title">Java</h5>
+		<h6 class="card-text">Hello World Example:</h6>
+		<pre class="pre-scrollable text-start"><code>
+public class Main
+{
+  public static void main(String args[])
+  {
+    System.out.println("Hello, World!");
+  }
+}
+		</code></pre>
 	      </div>
 	    </div>
 	  </div>
