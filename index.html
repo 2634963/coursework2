@@ -88,7 +88,7 @@ _start:
 		  
   # Create a new stack frame for the function call
   subi r1, r1, 0x60
-  
+
   # Execute DbgPrint (branch to CTR)
   bctrl
 		  
@@ -155,23 +155,25 @@ public class Main
     </div>
 
     <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-md col-12 bg-primary text-white p-3 text-center">
-      <div class="col-1"><img width="64" class="img-fluid" src="./images/webdevcoursework2logo.png" alt="Aiden's Website Logo"></div>
-      <div class="col-3 text-center"><h2>Aiden's Website</h2></div>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtons">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="col-8 collapse navbar-collapse" id="navbarButtons">
-	<ul class="col-12 navbar-nav">
-	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#navbar">Home</a></li>
-	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#projects">My Projects</a></li>
-	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#proglangs">Programming Languages</a></li>
-	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#siteinfo">Site Info</a></li>
-	</ul>
-      </div>
-    </nav>
+    <header>
+      <nav id="navbar" class="navbar navbar-expand-md col-12 bg-primary text-white p-3 text-center">
+	<div class="col-1"><img width="64" class="img-fluid" src="./images/webdevcoursework2logo.png" alt="Aiden's Website Logo"></div>
+	<div class="col-3 text-center"><h2>Aiden's Website</h2></div>
+	
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtons">
+          <span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div class="col-8 collapse navbar-collapse" id="navbarButtons">
+	  <ul class="col-12 navbar-nav">
+	    <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#navbar">Home</a></li>
+	    <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#projects">My Projects</a></li>
+	    <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#proglangs">Programming Languages</a></li>
+	    <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#siteinfo">Site Info</a></li>
+	  </ul>
+	</div>
+      </nav>
+    </header>
 
     <!-- Main site content -->
 
