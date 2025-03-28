@@ -155,8 +155,9 @@ public class Main
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm col-12 bg-primary text-white p-3 text-center">
-      <div class="col-4 text-center"><h2>Aiden's Website</h2></div>
+    <nav id="navbar" class="navbar navbar-expand-md col-12 bg-primary text-white p-3 text-center">
+      <div class="col-1"><img width="64" class="img-fluid" src="./images/webdevcoursework2logo.png" alt="Aiden's Website Logo"></div>
+      <div class="col-3 text-center"><h2>Aiden's Website</h2></div>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtons">
         <span class="navbar-toggler-icon"></span>
@@ -164,10 +165,10 @@ public class Main
       
       <div class="col-8 collapse navbar-collapse" id="navbarButtons">
 	<ul class="col-12 navbar-nav">
-	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="./index.html">Test1</a></li>
-	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="./index.html">Test2</a></li>
-	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="./index.html">Test3</a></li>
-	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="./index.html">Test4</a></li>
+	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#navbar">Home</a></li>
+	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#projects">My Projects</a></li>
+	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#proglangs">Programming Languages</a></li>
+	  <li class="col-3 p-1 nav-item"><a class="btn btn-light shadow link-secondary link-underline link-underline-opacity-0" href="#siteinfo">Site Info</a></li>
 	</ul>
       </div>
     </nav>
@@ -175,7 +176,7 @@ public class Main
     <!-- Main site content -->
 
     <!-- My projects -->
-    <div class="col-12 text-center py-3">
+    <div id="projects" class="col-12 text-center py-3">
       <h3>My Projects:</h3>
 
       <div class="row">
@@ -213,7 +214,7 @@ public class Main
     </div>
     
     <!-- Programming languages I know (to a reasonable extent) -->
-    <div class="col-12 p-5 text-center">
+    <div id="proglangs" class="col-12 p-5 text-center">
       <h3>Programming Languages I Know (to a reasonable extent):</h3>
       
       <div class="row p-3">
@@ -271,7 +272,7 @@ public class Main
     </div>
 
     <!-- Footer -->
-    <footer class="footer text-center text-white bg-primary">
+    <footer id="siteinfo" class="footer text-center text-white bg-primary">
       <div class="col-12 py-3">
 	<div class="row">
 	  <p>The C Programming Language logo is Copyright (C) 1978 Prentice Hall</p>
